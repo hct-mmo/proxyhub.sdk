@@ -1,11 +1,11 @@
 import axios, { AxiosInstance } from 'axios';
 
-class ProxyHubSdk {
+class ProxySDK {
   private client: AxiosInstance;
 
-  constructor(userApiKey: string) {
+  constructor(baseURL: string, userApiKey: string) {
     this.client = axios.create({
-      baseURL: 'https://api-proxyhub.naikyo.live', // Cập nhật baseURL
+      baseURL,
       headers: {
         'Content-Type': 'application/json',
         'user-api-key': userApiKey, // Thêm user API key vào header
@@ -76,4 +76,4 @@ class ProxyHubSdk {
   }
 }
 
-export default ProxyHubSdk;
+export default ProxySDK;

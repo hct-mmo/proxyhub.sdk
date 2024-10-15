@@ -13,10 +13,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = __importDefault(require("axios"));
-class ProxyHubSdk {
-    constructor(userApiKey) {
+class ProxySDK {
+    constructor(baseURL, userApiKey) {
         this.client = axios_1.default.create({
-            baseURL: 'https://api-proxyhub.naikyo.live',
+            baseURL,
             headers: {
                 'Content-Type': 'application/json',
                 'user-api-key': userApiKey, // Thêm user API key vào header
@@ -96,4 +96,4 @@ class ProxyHubSdk {
         });
     }
 }
-exports.default = ProxyHubSdk;
+exports.default = ProxySDK;

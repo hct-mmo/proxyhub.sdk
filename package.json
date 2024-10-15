@@ -1,19 +1,20 @@
 {
-  "name": "proxy-hub-sdk",
-  "version": "1.0.2",
-  "description": "SDK for interacting with the Proxy Hub API",
+  "name": "proxy-sdk",
+  "version": "1.0.6",
+  "description": "ProxySDK là một giải pháp proxy xoay dân cư tiêu chuẩn cho các dự án tại Việt Nam, đặc biệt phù hợp cho các dự án MMO và Airdrop.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "echo 'No tests specified' && exit 0"
+    "test": "echo 'No tests specified' && exit 0",
+    "publish": "npm publish"
   },
   "keywords": [
     "proxy",
     "sdk",
     "api"
   ],
-  "author": "Your Name",
+  "author": "Nathan",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.0.0",
