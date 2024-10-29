@@ -24,7 +24,7 @@ ProxySDK là một bộ công cụ phát triển phần mềm tiêu chuẩn cho 
 Hướng dẫn cách sử dụng dự án. Dưới đây là một ví dụ mã nguồn:
 
 ```javascript
-import ProxySDK from "proxy-sdk";
+import ProxySDK from "residential-proxy-sdk";
 
 const sdk = new ProxySDK("https://vinproxy.net", "YOUR_API_KEY");
 
